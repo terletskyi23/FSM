@@ -15,7 +15,7 @@ export default class PlanulaState implements IJellyfishState {
   }
 
   public planula(): void {
-    console.warn('! Planula cannot be transformed to strobila');
+    console.warn('! Your jellyfish already on this state');
   }
 
   public polyp(): void {
@@ -29,7 +29,7 @@ export default class PlanulaState implements IJellyfishState {
   }
 
   public polypColony(): void {
-    console.warn('! Planula cannot be transformed to strobila');
+    console.warn('! Planula cannot be transformed to polyp colony');
   }
 
   public strobila(): void {
@@ -37,10 +37,10 @@ export default class PlanulaState implements IJellyfishState {
   }
 
   public ephyra(): void {
-    console.warn('! Planula cannot be transformed to strobila');
+    console.warn('! Planula cannot be transformed to ephyra');
   }
 
   public adultJellyfish(): void {
-    console.warn('! Planula cannot be transformed to strobila');
+    console.warn('! Planula cannot be transformed to adult jellyfish');
   }
 }
