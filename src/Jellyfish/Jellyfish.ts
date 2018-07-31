@@ -1,4 +1,4 @@
-import { IJellyfishState } from './jellyfish-states/interfaces';
+import { IJellyfishState } from './states/interfaces';
 
 export default class Jellyfish {
   public currentState: IJellyfishState;

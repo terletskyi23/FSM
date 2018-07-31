@@ -1,4 +1,5 @@
-import { Jellyfish, IJellyfishState } from '../Jellyfish';
+import Jellyfish from '../Jellyfish';
+import { IJellyfishState } from './interfaces';
 
 export default class AdultJellyfishState implements IJellyfishState {
   public jellyfish: Jellyfish;
