@@ -1,30 +1,46 @@
-import Jellyfish from '../Jellyfish';
 import { IJellyfishState } from './interfaces';
 
+import Jellyfish from '../Jellyfish';
+
 export default class PlanulaState implements IJellyfishState {
-  public jellyfish: Jellyfish;
+  private _name = 'Planula';
+  private _jellyfish: Jellyfish;
+
+  constructor(jellyfish: Jellyfish) {
+    this._jellyfish = jellyfish;
+  }
+
+  public get name(): string {
+    return this._name;
+  }
 
   public planula(): void {
-    throw new Error('Not implemented');
+    console.warn('! Planula cannot be transformed to strobila');
   }
 
   public polyp(): void {
-    throw new Error('Not implemented');
+    console.groupCollapsed('> Grow up to polyp');
+    console.log('> > > > > > >');
+    console.log('do something.');
+    console.log('< < < < < < <');
+    console.groupEnd();
+
+    this._jellyfish.state = this._jellyfish.polypState;
   }
 
   public polypColony(): void {
-    throw new Error('Not implemented');
+    console.warn('! Planula cannot be transformed to strobila');
   }
 
   public strobila(): void {
-    throw new Error('Not implemented');
+    console.warn('! Planula cannot be transformed to strobila');
   }
 
   public ephyra(): void {
-    throw new Error('Not implemented');
+    console.warn('! Planula cannot be transformed to strobila');
   }
 
   public adultJellyfish(): void {
-    throw new Error('Not implemented');
+    console.warn('! Planula cannot be transformed to strobila');
   }
 }

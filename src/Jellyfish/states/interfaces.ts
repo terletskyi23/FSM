@@ -1,7 +1,7 @@
 import Jellyfish from '../Jellyfish';
 
 export interface IJellyfishState {
-  jellyfish: Jellyfish;
+  name: string;
 
   planula();
   polyp();
