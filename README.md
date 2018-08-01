@@ -5,3 +5,7 @@
 ### Small State Design Pattern prototype for my presentation 
 
 
+```
+yarn install
+yarn run start 
+```
