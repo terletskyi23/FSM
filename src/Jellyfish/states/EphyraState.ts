@@ -1,9 +1,7 @@
-import { IJellyfishState } from './interfaces';
-
 import Jellyfish from '../Jellyfish';
 import JellyfishState from './JellyfishState';
 
-export default class EphyraState extends JellyfishState implements IJellyfishState {
+export default class EphyraState extends JellyfishState {
 
   constructor(jellyfish: Jellyfish) {
     super('ephyra', jellyfish);
