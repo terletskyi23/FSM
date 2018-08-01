@@ -1,17 +1,12 @@
 import { IJellyfishState } from './interfaces';
 
 import Jellyfish from '../Jellyfish';
+import JellyfishState from './JellyfishState';
 
-export default class EggState implements IJellyfishState {
-  private _name = 'Egg';
-  private _jellyfish: Jellyfish;
+export default class EggState extends JellyfishState implements IJellyfishState {
 
   constructor(jellyfish: Jellyfish) {
-    this._jellyfish = jellyfish;
-  }
-
-  public get name(): string {
-    return this._name;
+    super('egg', jellyfish);
   }
 
   public planula(): void {
@@ -21,27 +16,7 @@ export default class EggState implements IJellyfishState {
       console.log('< < < < < < <');
     console.groupEnd();
 
-    this._jellyfish.state = this._jellyfish.planulaState;
-  }
-
-  public polyp(): void {
-    console.warn('! Egg cannot be transformed to polyp');
-  }
-
-  public polypColony(): void {
-    console.warn('! Egg cannot be transformed to polyp colony');
-  }
-
-  public strobila(): void {
-    console.warn('! Egg cannot be transformed to strobila');
-  }
-
-  public ephyra(): void {
-    console.warn('! Egg cannot be transformed to ephyra');
-  }
-
-  public adultJellyfish(): void {
-    console.warn('! Egg cannot be transformed to adult jellyfish');
+    this.jellyfish.state = this.jellyfish.planulaState;
   }
 
 }

@@ -2,7 +2,7 @@ import Jellyfish from './Jellyfish/Jellyfish';
 
 const j = new Jellyfish();
 
-console.group('- - Jellyfish - -');
+console.group('- - - - - Jellyfish - - - - -');
 
   console.info('= Current State: ', j.stateName);
 
